@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Scroll view to scroll -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFF90"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logowq" />
+
+
+            <!-- Text View to welcome users -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Welcome to World Quiz"
+                android:textAllCaps="true"
+                android:textColor="#004D40"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <!-- Introduction Text View -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome to the World Quiz.You have to answer a series of 7 question. After you finish the quiz click Submit Button. Your score will be displayed and your performance will be rated."
+            android:textAllCaps="false"
+            android:textColor="#FF3D00"
+            android:textSize="25sp" />
+
+
+        <!-- Info -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="Start answering the questions now."
+            android:textColor="#311B92"
+            android:textSize="25sp" />
+
+
+        <!-- QUESTION STARTS -->
+
+        <!-- Text View to display question -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="QUESTION 1"
+            android:textColor="#01579B"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="What is the currency of France ?"
+            android:textColor="#880E4F"
+            android:textSize="45sp" />
+
+        <!-- Radio Group for answer -->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <RadioButton
+                android:id="@+id/dollar_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="euroFalse"
+                android:padding="20dp"
+                android:text="Dollar"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+            <RadioButton
+                android:id="@+id/euro_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="euroTrue"
+                android:padding="20dp"
+                android:text="Euro"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+            <RadioButton
+                android:id="@+id/rupee_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="euroFalse"
+                android:padding="20dp"
+                android:text="Rupee"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+            <RadioButton
+                android:id="@+id/pound_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="euroFalse"
+                android:padding="20dp"
+                android:text="Pound"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+        </RadioGroup>
+
+
+        <!-- Question 1 ends -->
+
+        <!-- Question 2 starts -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="QUESTION 2"
+            android:textColor="#01579B"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="What is the capital of India?"
+            android:textColor="#880E4F"
+            android:textSize="45sp" />
+
+        <!-- Radio Group for answer -->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <RadioButton
+                android:id="@+id/chennai_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="delhiFalse"
+                android:padding="20dp"
+                android:text="Chennai"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+            <RadioButton
+                android:id="@+id/mumbai_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="delhiFalse"
+                android:padding="20dp"
+                android:text="Mumbai"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+            <RadioButton
+                android:id="@+id/Dhaka_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="delhiFalse"
+                android:padding="20dp"
+                android:text="Dhaka"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+            <RadioButton
+                android:id="@+id/Delhi_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="delhiTrue"
+                android:padding="20dp"
+                android:text="Delhi"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+        </RadioGroup>
+
+
+        <!-- Question 2 ends -->
+
+        <!-- Question 3 starts -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="QUESTION 3"
+            android:textColor="#01579B"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="What is the capital of United States of America?"
+            android:textColor="#880E4F"
+            android:textSize="45sp" />
+
+        <!-- Radio Group for answer -->
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <RadioButton
+                android:id="@+id/washington_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="washingtonTrue"
+                android:padding="20dp"
+                android:text="Washington D.C"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+            <RadioButton
+                android:id="@+id/sanfraccisco_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="washingtonFalse"
+                android:padding="20dp"
+                android:text="San Francisco"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+            <RadioButton
+                android:id="@+id/losangles_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="washingtonFalse"
+                android:padding="20dp"
+                android:text="Los Angles"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+            <RadioButton
+                android:id="@+id/newyork_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="washingtonFalse"
+                android:padding="20dp"
+                android:text="New York"
+                android:textColor="#EF6C00"
+                android:textSize="40sp" />
+
+
+        </RadioGroup>
+
+
+        <!-- Question 3 ends -->
+
+        <!-- Question 4 starts -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="QUESTION 4"
+            android:textColor="#01579B"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Where is Antartica located ?"
+            android:textColor="#880E4F"
+            android:textSize="45sp" />
+
+        <!-- Edit Text for answer -->
+
+        <EditText
+            android:id="@+id/antarctica_location_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="North or South(Please enter in lower-case)"
+            android:inputType="text"
+            android:textColor="#EF6C00"
+            android:textSize="25sp" />
+
+        <!-- Question 4 ends -->
+
+        <!-- Question 5 starts -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="QUESTION 5"
+            android:textColor="#01579B"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Is China located North or South of India?"
+            android:textColor="#880E4F"
+            android:textSize="45sp" />
+
+        <!-- Edit Text for answer -->
+
+        <EditText
+            android:id="@+id/china_location_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="North or South (Please enter in lower-case)"
+            android:inputType="text"
+            android:textColor="#880E4F"
+            android:textSize="25sp" />
+
+        <!-- Question 5 ends -->
+
+        <!-- Question 6 starts -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="QUESTION 6"
+            android:textColor="#01579B"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Select the Islands"
+            android:textColor="#880E4F"
+            android:textSize="45sp" />
+
+        <!-- Check Box for answer -->
+
+        <CheckBox
+            android:id="@+id/hawai_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hawai"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/mexico_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mexico"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/lakshadweep_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lakshadweep"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/india_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <!-- Question 6 ends -->
+
+        <!-- Question 7 starts -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:text="QUESTION 7"
+            android:textColor="#01579B"
+            android:textSize="70sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Select the Gulf Countries."
+            android:textColor="#880E4F"
+            android:textSize="45sp" />
+
+        <!-- Check Box for answer -->
+
+        <CheckBox
+            android:id="@+id/saudiArabia_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saudi Arabia"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/turkey_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turkey"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/kuwait_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuwait"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <CheckBox
+            android:id="@+id/srilanka_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sri Lanka"
+            android:textColor="#880E4F"
+            android:textSize="40sp" />
+
+        <!-- Question 7 ends -->
+
+
+        <!-- End of all questions -->
+
+
+        <!-- Submit Button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="100dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#E91E63"
+                android:onClick="submit"
+                android:text="SUBMIT"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
